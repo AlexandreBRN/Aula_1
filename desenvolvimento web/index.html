@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body> 
+    <div class="header">
+        <p>Clique nos botões com cores</p>
+
+        <div id="vermelho" class="tabcontent">
+            <h1>Vermelho</h1>
+            <p>raiva, paixão, fúria, ira e desejo.</p>
+        </div>
+
+        <div id="verde" class="tabcontent">
+            <h1>Verde</h1>
+            <p>Esperança, liberdade, saúde e vitalidade.</p> 
+        </div>
+
+        <div id="azul" class="tabcontent">
+            <h1>Azul</h1>
+            <p>Criatividade, juventude e alegria.</p>
+        </div>
+
+        <div id="laranja" class="tabcontent">
+            <h1>Laranja</h1>
+            <p>Alegria, vitalidade, prosperidade e sucesso.</p>
+        </div>
+
+        <button class="tablink" onclick="openCity('vermelho', this, 'red')" id="defaultOpen">vermelho</button>
+        <button class="tablink" onclick="openCity('verde', this, 'green')">verde</button>
+        <button class="tablink" onclick="openCity('azul', this, 'blue')">azul</button>
+        <button class="tablink" onclick="openCity('laranja', this, 'orange')">laranja</button>
+
+        <script>
+            function openCity(cityName,elmnt,color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(cityName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+            }
+            document.getElementById("defaultOpen").click();
+        </script>
+    </div>
+
+    <div class="navbar">
+        <a target="_blank" class="active" href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a target="_blank" href="sobre.html"><i class="responsive"></i> Sobre</a>
+        <a target="_blank" href="produtos.html"><i class="fa fa-fw fa-envelope"></i> Produtos e Serviços</a>
+        <a target="_blank" href="formulario.html"><i class="fa fa-fw fa-user"></i> Formulário de Contrato</a>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://www.grupoescolar.com/wp-content/uploads/2021/03/paisagem-2C.jpg">
+            <img src="https://www.grupoescolar.com/wp-content/uploads/2021/03/paisagem-2C.jpg" alt="Cinque Terre">
+          </a>
+          <div class="desc">Uma paisagem</div>
+        </div>
+      
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://img.freepik.com/fotos-premium/paisagem-de-cornfield-e-verde-campo-com-por-do-sol-fazenda_33771-88.jpg?w=2000">
+            <img src="https://img.freepik.com/fotos-premium/paisagem-de-cornfield-e-verde-campo-com-por-do-sol-fazenda_33771-88.jpg?w=2000" alt="Forest">
+          </a>
+          <div class="desc">outras</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://static.todamateria.com.br/upload/pa/is/paisagem-natural-og.jpg">
+            <img src="https://static.todamateria.com.br/upload/pa/is/paisagem-natural-og.jpg" alt="Northern Lights">
+          </a>
+          <div class="desc">paisagens</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg">
+            <img src="https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg" alt="Mountains">
+          </a>
+          <div class="desc">aqui</div>
+        </div>
+    <p>.</p>
+    <p>'-'</p>
+    <p>.</p>
+    <p>.</p>
+
+    </div>
+    <style>
+        
+        </style>
+        
+        <div class="footer">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur nulla officiis possimus quam expedita, perspiciatis voluptatum ratione quis consectetur repellat eveniet! Totam iusto aliquid adipisci facilis natus repellendus laborum!</p>
+        </div>
+    <div class="clearfix"></div>
+
+    
+      
+
+</body>
+</html>
